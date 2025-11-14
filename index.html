@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Star Connect - Internet WiFi Rumah</title>
+<style>
+ body {
+  font-family: Arial, sans-serif;
+  background: #0d1b2a;
+  color: white;
+  margin: 0;
+ }
+
+ header {
+  background: #0d1b2a;
+  text-align: center;
+  padding: 25px;
+  border-bottom: 2px solid #1b263b;
+ }
+ header img {
+  height: 70px;
+  display: block;
+  margin: auto;
+ }
+ header div {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 8px;
+ }
+ header small {
+  font-size: 14px;
+  color: #bcd0e6;
+ }
+
+ .promo-banner {
+  background: #144272;
+  padding: 12px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  border-bottom: 3px solid #2c74b3;
+ }
+
+ .section { padding: 25px; text-align:center; }
+
+ .paket-container { 
+  display:flex; 
+  flex-wrap:wrap; 
+  justify-content:center; 
+  gap:25px; 
+ }
+
+ .paket {
+  background: white;
+  color: #0d1b2a;
+  width: 260px;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.25);
+  transition: 0.3s;
+ }
+ .paket:hover { transform: scale(1.05); }
+
+ .paket h3 { margin-bottom: 6px; }
+ .paket p { margin: 6px 0; font-weight: bold; }
+ .paket ul { font-size: 14px; padding-left: 18px; }
+
+ button {
+  background: #2c74b3;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 15px;
+ }
+
+ form { 
+  max-width: 400px; 
+  margin: auto; 
+  background:#1b263b; 
+  padding: 20px; 
+  border-radius: 12px; 
+ }
+ form input, form select { 
+  width:100%; 
+  padding:12px; 
+  border:none; 
+  border-radius:8px; 
+  margin-top:10px; 
+ }
+
+ #wa-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+ }
+</style>
+</head>
+<body>
+
+<header>
+ <img src="https://i.ibb.co/r3C5NLB/smc2.png" alt="Logo">
+ <div>Star Connect</div>
+ <small>Internet Unlimited Tanpa Cemas</small>
+</header>
+
+<div class="promo-banner">
+🎉 PROMO AKHIR TAHUN • Biaya Pemasangan Hanya <b>Rp 200.000</b> 🎉
+</div>
+
+<div class="section">
+ <h2>Kenapa Harus Berlangganan di Star Connect?</h2>
+ <p>Koneksi stabil • Service ramah • Kecepatan real • Tidak ada batasan kuota</p>
+</div>
+
+<div class="section">
+<h2>Paket Internet</h2>
+<div class="paket-container">
+
+ <div class="paket">
+  <h3>Up to 10 Mbps</h3>
+  <p>Rp 165.000 / bulan</p>
+  <ul>
+   <li>Fiber Optic</li>
+   <li>Include WiFi Router</li>
+   <li>Support 24 Jam</li>
+   <li>Unlimited Kuota</li>
+   <li>Free Registrasi</li>
+   <li>Biaya Bulanan FLAT</li>
+  </ul>
+ </div>
+
+ <div class="paket">
+  <h3>Up to 15 Mbps</h3>
+  <p>Rp 220.000 / bulan</p>
+  <ul>
+   <li>Fiber Optic</li>
+   <li>Include WiFi Router</li>
+   <li>Support 24 Jam</li>
+   <li>Unlimited Kuota</li>
+   <li>Free Registrasi</li>
+   <li>Biaya Bulanan FLAT</li>
+  </ul>
+ </div>
+
+ <div class="paket">
+  <h3>Up to 25 Mbps</h3>
+  <p>Rp 300.000 / bulan</p>
+  <ul>
+   <li>Fiber Optic</li>
+   <li>Include WiFi Router</li>
+   <li>Support 24 Jam</li>
+   <li>Unlimited Kuota</li>
+   <li>Free Registrasi</li>
+   <li>Biaya Bulanan FLAT</li>
+  </ul>
+ </div>
+
+</div>
+
+<p style="margin-top:25px;"><strike>Biaya Pemasangan Rp 300.000</strike></p>
+<p><b style="color:#ffd100; font-size:20px;">Sekarang Cuma Rp 200.000 ✅</b></p>
+</div>
+
+<div class="section">
+<h2>Daftar Pemasangan</h2>
+<form>
+<label>Nama Lengkap</label>
+<input type="text" id="nama">
+<label>Alamat / Wilayah</label>
+<select id="alamat">
+<option>Proliman</option>
+<option>Kagungan Dalam</option>
+<option>Kali Miring</option>
+<option>Kagungan Rahayu</option>
+<option>Ujung Gunung Ilir</option>
+<option>Tulung Boho</option>
+</select>
+<label>Paket</label>
+<select id="paket">
+<option>Up to 10 Mbps - Rp165.000</option>
+<option>Up to 15 Mbps - Rp220.000</option>
+<option>Up to 25 Mbps - Rp300.000</option>
+</select>
+<button type="button" onclick="kirimWA()">Kirim Pendaftaran via WhatsApp</button>
+</form>
+</div>
+
+<a id="wa-float" href="https://wa.me/6285609485724" target="_blank">Chat Admin</a>
+
+<script>
+function kirimWA(){
+ let nama = document.getElementById("nama").value;
+ let alamat = document.getElementById("alamat").value;
+ let paket = document.getElementById("paket").value;
+ let nomor = "6285609485724";
+ let pesan = `Halo Admin Star Connect.%0ASaya ingin daftar pemasangan.%0A%0ANama: ${nama}%0AAlamat: ${alamat}%0APaket: ${paket}`;
+ window.open(`https://wa.me/${nomor}?text=${pesan}`, '_blank');
+}
+</script>
+
+</body>
+</html>
